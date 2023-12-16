@@ -4,23 +4,24 @@ plugins {
 }
 
 android {
-    namespace 'com.example.battletanks'
-    compileSdk 34
+    namespace = 'com.example.battletanks'
+    compileSdk = 34
 
     defaultConfig {
-        applicationId "com.example.battletanks"
-        minSdk 24
-        targetSdk 33
-        versionCode 1
-        versionName "1.0"
+        applicationId = "com.example.battletanks"
+        minSdk = 24
+        targetSdk = 33
+        versionCode = 1
+        versionName = "1.0"
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
         release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            minifyEnabled = false
+            proguardFiles (getDefaultProguardFile('proguard-android-optimize.txt'),
+                    'proguard-rules.pro')
         }
     }
     compileOptions {
